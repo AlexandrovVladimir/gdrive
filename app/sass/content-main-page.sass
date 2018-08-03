@@ -1,0 +1,158 @@
+/* CONTENT MAIN PAGE */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.content
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  &__container
+    width: 1260px
+    margin: auto
+    display: flex
+    justify-content: flex-start
+  &-main
+    background: #e1e1e2 url("../img/mobile-note.png") no-repeat right top / 80%
+    height: 508px
+    position: relative
+  &-main-wrapper
+    flex: 0 0 calc(100% - 301px)
+    max-width: calc(100% - 301px)
+  &-side
+    flex: 0 0 301px
+    max-width: 301px
+  .program
+    //padding-top: 115px
+    padding-top: 80px
+    padding-left: 40px
+    &__text
+      color: #1c1b1a
+      font-family: $font-proxima
+      font-size: 16px
+      font-weight: 700
+      line-height: 34.31px
+      text-transform: uppercase
+      letter-spacing: 0.16px
+    &__title
+      color: #1c1b1a
+      font-family: $font-proxima-semibold
+      font-size: 55px
+      font-weight: 400
+      line-height: 55px
+      text-transform: uppercase
+      letter-spacing: 0.55px
+      max-width: 391px
+    &__days
+      color: #1c1b1a
+      font-family: $font-proxima
+      font-size: 16px
+      font-weight: 400
+      line-height: 34.31px
+    &__time
+      &-number
+        color: #1c1b1a
+        font-family: $font-proxima-semibold
+        font-size: 16px
+        line-height: 34.31px
+      &-region
+        color: #1c1b1a
+        font-family: $font-proxima
+        font-size: 16px
+        font-weight: 300
+        line-height: 34.31px
+    &__call
+      margin-top: 63px
+      &-text
+        color: #ea5419
+        font-family: $font-proxima
+        font-size: 18px
+        font-weight: 400
+        line-height: 34.31px
+        text-transform: uppercase
+        letter-spacing: 0.18px
+      &-number
+        color: #1c1b1a
+        font-family: $font-proxima
+        font-size: 24px
+        font-weight: 700
+        line-height: 34.31px
+  .content-promo
+    border: 1px solid #ebece4
+    background-color: #ffffff
+    padding: 30px 40px
+    &__text
+      color: #1c1b1a
+      font-family: $font-proxima
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+      &:nth-child(1), &:nth-child(2)
+        flex: 0 0 200px
+        max-width: 200px
+        min-width: 200px
+      &:nth-child(3)
+        flex: 0 0 250px
+        max-width: 250px
+        min-width: 250px
+      &:nth-child(4)
+        flex: 0 0 200px
+        max-width: 200px
+        min-width: 200px
+  .content-side
+    &__congratulation
+      background: #f3f3f3 url(../img/surprise.png) no-repeat right bottom
+      //height: 211px
+      height: 250px
+      padding: 20px
+    .congratulation
+      .slick-arrow
+        cursor: pointer
+        position: absolute
+        right: 0
+        z-index: 1
+      .slick-next
+        top: -1.5px
+      .slick-prev
+        bottom: 3.5px
+      &__day
+        color: #ea5419
+        font-family: $font-proxima-semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 34.31px
+        text-transform: uppercase
+        letter-spacing: 0.4px
+      &__title
+        color: #1c1b1a
+        font-family: $font-proxima-semibold
+        font-size: 20px
+        font-weight: 400
+        line-height: 22px
+        max-width: 170px
+      .congratulation-list
+        margin-top: 30px
+        &__item
+          display: flex
+          align-items: center
+          justify-content: flex-start
+          height: 25px
+          svg
+            cursor: pointer
+            width: 12px
+            height: 13px
+          &--text
+            color: #1c1b1a
+            font-family: $font-proxima
+            font-size: 14px
+            font-weight: 400
+            line-height: 34.31px
+            letter-spacing: 0.35px
+            margin-left: 0.5rem
+          &:hover
+            .congratulation-list__item--text
+              color: #ea5419
+              text-decoration: none
+            svg
+              stroke: #ea5419

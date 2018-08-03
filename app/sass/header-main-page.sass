@@ -1,0 +1,141 @@
+/* HEADER MAIN PAGE */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.header
+  &__container
+    max-width: 1260px
+    margin: auto
+    display: flex
+    justify-content: flex-start
+  &__part
+    flex: 0 0 calc(100% - 301px)
+    max-width: calc(100% - 301px)
+  &__map
+    background-color: #1e1e1e
+    flex: 0 0 301px
+    max-width: 301px
+    img
+      width: 100%
+      height: 100%
+  .header-top
+    background-color: #1e1e1e
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &__left, &__right
+      display: flex
+      align-items: center
+      color: $white-color
+      flex: 0 0 50%
+      max-width: 50%
+    &__right
+      justify-content: flex-end
+  &-bottom
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+  &__location
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    width: 213px
+    &-name
+      color: #e1e1e2
+      font-family: $font-proxima
+      font-size: 13px
+      font-weight: 400
+      line-height: 34.89px
+      text-transform: uppercase
+      letter-spacing: 0.97px
+      margin-left: 8px
+  &__listen
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    &-digits
+      color: #e1e1e2
+      font-family: $font-proxima-semibold
+      font-size: 24px
+      font-weight: 400
+      line-height: 34.31px
+      text-transform: uppercase
+      letter-spacing: 0.6px
+    &-text
+      color: #e1e1e2
+      font-family: $font-proxima
+      font-size: 12px
+      font-weight: 400
+      line-height: 10px
+      letter-spacing: 0.3px
+      margin-left: 5px
+      width: 70px
+  &__search
+    display: inline-block
+    width: 19px
+    height: 19px
+    margin-right: 32px
+    img
+      display: block
+  &__burger
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 18px
+    &-line
+      width: 30px
+      height: 2px
+      border-radius: 1px
+      background-color: #f0f0f0
+  &__logo
+    display: inline-block
+    width: 213px
+    height: 102px
+    img
+      width: 100%
+      height: 100%
+  &__live
+    border-right: 1px solid #f3f3f3
+    display: flex
+    align-items: center
+    padding: 0 25px
+  &__live-write
+    display: flex
+    align-items: center
+    padding: 0 25px
+  &__live-stream
+    justify-self: flex-end
+    margin-left: auto
+    position: relative
+    width: 165px
+    //background-color: rgba(0,0,0,0.9)
+    .map-online
+      width: 100%
+      height: 100%
+    &-icon
+      position: absolute
+      left: 20px
+      top: 20px
+      width: 12px
+      height: 12px
+    &-text
+      position: absolute
+      bottom: 1rem
+      left: 20px
+      text-transform: uppercase
+      a
+        color: #f5f6f8
+        font-family: $font-proxima-semibold
+        font-size: 16px
+        font-weight: 400
+        line-height: 18px
+        letter-spacing: 0.4px
+        &:hover
+          color: #f5f6f8
+          text-decoration: none

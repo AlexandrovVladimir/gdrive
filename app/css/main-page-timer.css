@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* TIMER */
+/* FONTS */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Fonts_Open Sans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+.countdown {
+  background-color: #ea5419;
+  height: calc(100% - 250px);
+  padding: 65px 30px; }
+  .countdown__text {
+    color: #ffffff;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.14px; }
+  .countdown__text-big {
+    color: #FFFFFF;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-top: 25px; }
+
+.timer {
+  font-size: 18pt;
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px; }
+  .timer .days, .timer .hours, .timer .minutes {
+    border: 3px solid #fff;
+    text-shadow: 0 0 6px #bdcbcc;
+    color: #ffffff;
+    line-height: 14px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 64px;
+    height: 72px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+  .timer .days {
+    padding: 15px 0; }
+    .timer .days:after {
+      content: 'дней';
+      font-size: 18px;
+      font-weight: 400;
+      display: table; }
+  .timer .hours {
+    padding: 15px 0; }
+    .timer .hours:after {
+      content: 'часов';
+      font-size: 18px;
+      font-weight: 400;
+      display: table; }
+  .timer .minutes {
+    padding: 15px 0; }
+    .timer .minutes:after {
+      content: 'минут';
+      font-size: 18px;
+      font-weight: 400;
+      display: table; }
+  .timer .delimiter {
+    display: inline-block;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-weight: bold;
+    color: #ffffff; }

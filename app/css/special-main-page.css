@@ -1,0 +1,160 @@
+/* SPECIAL MAIN PAGE */
+/* FONTS */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaRegular/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot");
+  src: url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/Fonts_Proxima/ProximaNovaSemibold/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/Fonts_Open Sans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+.special {
+  margin-top: 53px; }
+  .special__container {
+    max-width: 1260px;
+    margin: auto; }
+  .special .special-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 25px; }
+    .special .special-inner__title {
+      width: 302px;
+      color: #ffffff;
+      font-family: "Proxima Nova Semibold", sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+      margin-left: 41px;
+      padding-top: 57px; }
+    .special .special-inner__text {
+      color: #ffffff;
+      font-family: "Open Sans Regular", sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-left: 41px;
+      margin-top: 30px;
+      max-width: 365px; }
+    .special .special-inner__link {
+      border-radius: 2px;
+      background-color: #ea5419;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 30px;
+      margin-left: 41px;
+      color: #ffffff;
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      width: 124px;
+      height: 32px; }
+      .special .special-inner__link img {
+        margin-left: 10px; }
+  .special__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 301px;
+            flex: 0 0 301px;
+    max-width: 301px;
+    -webkit-box-shadow: 0 0 8px rgba(97, 100, 111, 0.2);
+            box-shadow: 0 0 8px rgba(97, 100, 111, 0.2);
+    border-radius: 2px;
+    background-color: #ffffff; }
+  .special__content {
+    background: url("../img/special-bg.png") no-repeat;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 321px);
+            flex: 0 0 calc(100% - 321px);
+    max-width: calc(100% - 321px);
+    height: 515px;
+    position: relative; }
+    .special__content .car {
+      width: 837px;
+      height: 227px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+
+.instagram__title {
+  padding: 5px 1rem; }
+  .instagram__title span {
+    color: #1c1b1a;
+    display: inline-block;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 10px;
+    text-transform: uppercase; }
+
+.instagram__comments {
+  padding: 15px; }
+
+.instagram__description {
+  color: #1c1b1a;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 20px; }
+
+.instagram__ellips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .instagram__ellips-img {
+    margin-right: 10px; }
+  .instagram__ellips-text {
+    color: #1c1b1a;
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; }
+    .instagram__ellips-text:hover {
+      color: #1c1b1a; }
+
+.instagram__hashtag {
+  color: #468fd3;
+  display: inline-block;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px; }
